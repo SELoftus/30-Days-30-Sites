@@ -10,7 +10,7 @@
   
   <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
 <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
-<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Quicksand|Open+Sans'>
+<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Quicksand|Open+Sans|Just+Me+Again+Down+Here'>
 <link rel='stylesheet prefetch' href='http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css'>
 
       <link rel="stylesheet" href="css/style.css">
@@ -20,15 +20,18 @@
 
 <body>
   <body>
-  <div class="container">
-    <nav class="navbar container" role="navigation">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+  <div class="container-fluid">
+    <div class="row" id="header">
+      <div class="col-md-12 text-center">
+        <h1><span id="logo">knickerbocker kids</span></h1>
+      </div>
+    </div>
+    <nav class="navbar" role="navigation">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
           <i class="fa fa-bars" aria-hidden="true"></i>
           <span class="sr-only">Toggle navigation</span>
         </button>
-          <span class="navbar-brand">knickerbocker kids</span>
-        </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
@@ -36,67 +39,73 @@
             <li><a href="#">Find Store</a></li>
             <li><a href="#">Contact</a></li>
             <li><a href="#">View Cart/Checkout</a></li>
+            <li>
+              <form class="navbar-form" role="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+              </form>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
-  </div>
-  <section class="section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 text-center pull-left" id="product">
-          <img class="img-fluid" id="prodPhoto" src="https://drive.google.com/uc?export=view&id=0B5eNVqX2nZE_OXl1a3EwMWtUd28" alt="A yellow rubber duckie.">
-        </div>
-        <div class="col-md-6 pull-right" id="productSelect">
-          <p><strong><span id="prodTitle">Classic Rubber Duckie</span></strong></p>
-          <div>
-          <form>
-            <div class="form-group">
-              Quantity:
-              <div id="select">
-                <select class="custom-select" id="prodColor">
+    <div class="row">
+      <div class="col-md-6 text-center" id="product">
+        <img class="img-fluid" id="prodPhoto" src="https://drive.google.com/uc?export=view&id=0B5eNVqX2nZE_OXl1a3EwMWtUd28" alt="A yellow rubber duckie.">
+      </div>
+      <div class="col-md-6 pull-right" id="productSelect">
+        <h3><span id="prodTitle">Classic Rubber Duckie</span></h3>
+        <div class="row">
+          <div class="col-sm-12">
+            <form>
+              <div class="form-group">
+                <label for="usr">Quantity:</label>
+                <input type="text" class="form-control" id="qty">
+                <div id="select">
+                  <select class="custom-select" id="prodColor">
                 <option selected>Select Color</option>
                 <option value="1">Yellow</option>
   <option value="2">Green</option>
   <option value="3">Red</option>
                   <option value="4">Blue</option>
-                  <option value="3">Purple</option>
+                  <option value="3">Sparkly Purple</option>
 </select>
-              <button class="btn btn-primary btn-disabled <!--btn-block--> btn-add">Add to Cart</button>
+                </div>
+                <button class="btn btn-primary btn-disabled <!--btn-block--> btn-add">Add to Cart</button>
               </div>
-            </div>
-          </form>
+            </form>
           </div>
-          
-          <p id="rating">Average Rating:&nbsp;<i class="fa fa-star" aria-hidden="true"></i>&nbsp;<i class="fa fa-star" aria-hidden="true"></i>&nbsp;<i class="fa fa-star" aria-hidden="true"></i>&nbsp;<i class="fa fa-star" aria-hidden="true"></i>&nbsp;<i class="fa fa-star"
-              aria-hidden="true"></i></p>
-          <div class="row">
-            <div class="col-sm-3 review">
-              <p><a href="#">Read Reviews</a></p>
-            </div>
-            <div class="col-sm-3 review">
-              <p><a href="#">Write a Review</a></p>
-            </div>
-            <div class="row" id="share">
-              <div class="col-sm-12">
-                <p><span id="social">
+        </div>
+        <p id="rating">Average Rating:&nbsp;<i class="fa fa-star" aria-hidden="true"></i>&nbsp;<i class="fa fa-star" aria-hidden="true"></i>&nbsp;<i class="fa fa-star" aria-hidden="true"></i>&nbsp;<i class="fa fa-star" aria-hidden="true"></i>&nbsp;<i class="fa fa-star"
+            aria-hidden="true"></i></p>
+        <div class="row">
+          <div class="col-sm-3 review">
+            <p><a href="#">Read Reviews</a></p>
+          </div>
+          <div class="col-sm-4 review">
+            <p><a href="#">Write a Review</a></p>
+          </div>
+          <div class="row" id="share">
+            <div class="col-sm-12">
+              <p><span id="social">
                   <a href="http://www.facebook.com"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
                   <a href="http://www.twitter.com"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
                   <a href="http://www.instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                   <a href="http://www.pinterest.com"><i class="fa fa-pinterest-square" aria-hidden="true"></i></a></span>
-              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
   </section>
   </div>
 </body </html>
-  <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.1/jquery.min.js'></script>
-<script src='http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js'></script>
 
   
 </body>
