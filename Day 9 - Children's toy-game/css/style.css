@@ -8,7 +8,7 @@
 
 h1 {
   font-size: 8em;
-  background: linear-gradient(to left,gray 0.5em ,purple 1em ,gold 1.5em ,blue 2em ,pink 2.5em,tomato 3em,lime 3.5em , brown 4em) 0 0;
+  background: linear-gradient(to left, red 0.5em, orange 1em, yellow 1.5em, green 2em, blue 2.5em, indigo 3em, violet 3.5em ,red 4em) 0 0;
   background-size: 5em 100%;
 }
 
@@ -19,6 +19,12 @@ h1 {
   mix-blend-mode: screen;
   text-shadow: 0 0 2px white;
   margin-top: -40px;
+  word-wrap: break-word;
+     -webkit-hyphens: auto;
+     -moz-hyphens: auto;
+     -ms-hyphens: auto;
+     -o-hyphens: auto;
+     hyphens: auto;
 }
 
 .nav {
@@ -56,12 +62,18 @@ ul.nav a: focus {
   max-width: 300px;
 }
 
-#prodTitle, #prodPrice {  
+#prodTitle {  
   font-size: 2em;
+  color: green;
 }
 
 #prodPrice {
-  font-weight: 300;
+  font-size: 1.25em;
+  font-weight: 600;
+}
+
+form {
+  margin-top: 2%;
 }
 
 #qty {
@@ -79,12 +91,9 @@ ul.nav a: focus {
 .btn-primary {
   font-weight: bold;
   margin-left: 2%;
-}
-
-.btn-primary { 
   color: #ffffff; 
-  background-color: #000000; 
-  border-color: #000000; 
+  background-color: green; 
+  border-color: none; 
 } 
  
 .btn-add:hover, 
@@ -92,9 +101,9 @@ ul.nav a: focus {
 .btn-add:active, 
 .btn-add.active, 
 .open .dropdown-toggle.btn-add { 
-  color: #ffffff; 
-  background-color: #4B4640; 
-  border-color: #000000; 
+  color: green; 
+  background-color: greenyellow; 
+  border-color: greenyellow; 
 } 
  
 .btn-add:active, 
