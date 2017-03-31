@@ -1,0 +1,79 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.container {
+  padding-top: 2%;
+  margin: auto;
+}
+
+#studio {
+  font-family: 'Oswald', sans-serif;
+  text-style: oblique;
+  font-size: 2em;
+  font-weight: 300;
+  color: #8B3E2F;
+  line-height: 1.1em;
+}
+
+h1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.5em;
+  margin-bottom: 2%;
+}
+
+.nav-link {
+  color: #8B3A62;
+  font-style: oblique;
+  text-shadow: 3 3 #000000;
+}
+
+a:hover, a:visited {
+  color: #C0B283;
+}
+
+.carousel-inner img {
+  max-width: 100%;
+  height: 50em;
+  object-fit: cover;
+  overflow: hidden;
+  margin: auto;
+  background: none repeat scroll 0 0 #FEF1E9;
+}
+
+/* Creates a vertical nav starting at 768px (sm) */
+@media (min-width: 768px) {
+    .bootstrap-vertical-nav .collapse {
+        display: block;
+    }
+}
+
+row::before, .nav-item, #studio, .col-md-2, .col-lg-2 {
+  background-color: #FEF1E9;
+      height: 100vh:
+}
+
+nav.carousel:hover {
+  cursor: default;
+}
+
+.form-group {
+  width: 75%;
+  align: center;
+  
+}
+
+.custom-select {
+  padding-right:4px;
+  margin-right: 5px;
+}
+
+#select {
+  width: 70%;
+}
+
+#service {
+ font-family: 'Work Sans', sans-serif; 
+}
