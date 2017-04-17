@@ -34,10 +34,19 @@ h2 {
   color: #006bad;
 }
 
+h3 {
+    font-family: 'Raleway', sans-serif;
+    line-height: 0.8em;
+    font-size: 1.5em;
+}
+
 .currSpec {
-  color: #ffffff;
+  color: #000000;
   text-shadow: 4 4 #000000;
   border-radius: 10px;
+    max-height: 200px;
+    overflow: hidden;
+    object-fit: cover;
 }
 
 #currSpec1 {
@@ -46,6 +55,7 @@ h2 {
   background-size: 100%;
   background-position: top center;
   border: 5px solid #ffffff;
+    min-height: 200px;
 }
 
 #currSpec2 {
@@ -54,6 +64,7 @@ h2 {
   background-size: 100%;
   background-position: center center;
   border: 5px solid #ffffff;
+    
 }
 
 #currSpec3 {
