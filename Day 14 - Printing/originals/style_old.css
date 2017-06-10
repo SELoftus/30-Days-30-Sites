@@ -1,22 +1,15 @@
-/* Coolors Exported Palette - coolors.co/000505-817f75-f3efe0-dcc48e-d8cbc7 */
-
-/* Colors */
-$black: rgba(0, 5, 5, 1);
-$grey: rgba(129, 127, 117, 1);
-$white: rgba(243, 239, 224, 1);
-$gold: rgba(220, 196, 142, 1);
-$dust: rgba(216, 203, 199, 1);
+/*Basic layout & CSS completed April 10, 2017*/
 
 * {
   padding: 0;
   margin: 0;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 h1 {
-  font-family: 'Slabo 27px', serif;
+  font-family: 'Abril Fatface', cursive;
+  letter-spacing: .25em;
   color: #003b4c;
-  text-transform: uppercase;
 }
 
 nav {
